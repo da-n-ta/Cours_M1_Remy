@@ -228,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Jeu dans un notebook Pluto (tentative)</h1>
 <ul>
 <li><p>Création des modules dans les fichiers Julia pour pouvoir les appeler dans Pluto</p></li>
-<li><p>Réussir à créer des boutons (“New Game”, “Hit”, “Stand”)et d’afficher le jeu dans un terminal Julia avec interaction des boutons</p></li>
+<li><p>Réussir à créer des boutons (“New Game”, “Hit”, “Stand”) et d’afficher le jeu dans un terminal Julia avec interaction des boutons</p></li>
 <li><p>Faute d’interaction du jeu avec les boutons et découvrir que la réinitialisation d’une variable dans Pluto est impossible à faire car il a considère comme nouvelle définiton de la variable</p></li>
 <li><p>Essai de nettoyer un peu le notebook Pluto. Recherche de moyen de debbug un notebook pluto mais ça n’est pas disponible directement dans Pluto et la librairie (https://github.com/disberd/PlutoVSCodeDebugger.jl) proposant de le faire dans VSCode n’a pas été mis à jour depuis plusieurs mois (presque 1an) donc pas moyen de faire le cheminement de penser du notebook sans faire du débug.</p></li>
 <li><p>Décider d’archiver le premier essai du jeu qui consistait, dans le fichier jeu.jl, d’une fonction jeu qui contient toutes les étapes du jeu, et de créer des fonctions pour chaque étape (initialiser le jeu, affichage du statut de la partie, saisir la réponse du joueur dans le terminal) et une boucle pour agir sur le jeu selon le choix du joueur pour pouvoir juste les appeler pour faire run au jeu dans le terminal et dans Pluto. Puis, création d’un fichier main_terminal.jl avec la fontion “game” appelant les fonctions créées dans jeu.jl pour l’exécution du jeu.</p></li>
@@ -237,7 +237,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Changer la fonction “game” pour ne plus contenir une loop “while”.</p></li>
 <li><p>Le problème dans Pluto persiste</p></li>
 </ul>
-<p>Explication</p>
 </section>
 <section id="jeu-dans-r" class="level1">
 <h1>Jeu dans R</h1>
