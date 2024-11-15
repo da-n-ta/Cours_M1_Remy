@@ -49,7 +49,7 @@ end
 """
 Fonction de concatenation de decks
 """
-function concatene_decks(decks::Vector{Deck})
+function concatene(decks::Vector{Deck})
     new_list_cards = Vector{CardDefinitions.Card}()
     for deck in decks
         for card in deck.cards
@@ -72,7 +72,7 @@ function create_blackjack_deck(num_decks)
     for i in range(1,num_decks-1)
         append!(vect_deck_52,[deck_52])
     end
-    res = concatene_decks(vect_deck_52)
+    res = concatene(vect_deck_52)
     return res
 end
 
@@ -159,7 +159,7 @@ end
 Fonction d'affichage d'un Deck hand et le nom de la main :
 The name hand : liste des cartes de hand.
 """
-function display_hand(hand::Deck,name::String)
+function display(hand::Deck,name::String)
     print("The " * name * " hand : ")
     for card in hand.cards
         print(card.rank)
@@ -170,5 +170,5 @@ function display_hand(hand::Deck,name::String)
     println("")
 end
 
-export Deck,take_a_card, display_hand, create_empty_hand, hand_value, shuffle, shuffle!, create_deck_52, show_cards_values, concatene_decks, create_blackjack_deck 
+export Deck,take_a_card, display, create_empty_hand, hand_value, shuffle, shuffle!, create_deck_52, show_cards_values, concatene, create_blackjack_deck 
 end

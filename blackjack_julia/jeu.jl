@@ -32,13 +32,13 @@ Fonction d'affichage du statut de la partie dans le terminal
 """
 function display_game(player_hand,dealer_hand,end_game)
     # On affiche la main du joueur
-    display_hand(player_hand,"player")
+    display(player_hand,"player")
     hand_value_player = hand_value(player_hand)
     println("Current player hand value :")
     println(hand_value_player)
     
     # On affiche la main du dealer
-    display_hand(dealer_hand,"dealer")
+    display(dealer_hand,"dealer")
     hand_value_dealer = hand_value(dealer_hand)
     println("Current dealer hand value :")
     println(hand_value_dealer)
