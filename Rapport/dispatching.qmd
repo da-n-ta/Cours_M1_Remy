@@ -6,7 +6,7 @@ Explication idée
 
 # Code
 
-## Code R
+## R
 
 
 ## Julia
