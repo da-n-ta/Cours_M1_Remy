@@ -69,7 +69,7 @@ server <- function(input, output, session) {
   # Fontion pour faire render aux images des cartes
   render_hand_images <- function(hand) {
     card_images <- lapply(hand$cards, function(card) {
-      img_src <- paste0("https://raw.githubusercontent.com/malnoe/Cours_M1_Remy/main/www/", get_card_image(card))
+      img_src <- paste0("https://raw.githubusercontent.com/malnoe/Cours_M1_Remy/main/blackjack_r/www/", get_card_image(card))
       tags$img(src = img_src, height = "100px", style = "margin: 5px;")
     })
     do.call(tagList, card_images)
